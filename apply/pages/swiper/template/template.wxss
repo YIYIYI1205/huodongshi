@@ -1,0 +1,15 @@
+swiper-item{
+ display: flex;
+ flex-direction: column; 
+}
+.title{
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+}
+.pic1{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}

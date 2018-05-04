@@ -1,0 +1,8 @@
+<template name="swiperItem">
+  <!-- <swiper-item>
+      <image class="pic1" src="{{url}}"></image>
+      <text class="title">{{title1}}</text>
+      <text class="subtitle">{{title2}}</text>    
+  </swiper-item> -->
+  
+</template>

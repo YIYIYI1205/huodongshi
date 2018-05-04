@@ -1,0 +1,6 @@
+<view class="container">
+ <image class="pic" src="/images/background.jpg"></image> 
+  <view class="border" bindtap='onTap'>
+    <text>探索「西电华俱」</text>
+  </view>
+</view>

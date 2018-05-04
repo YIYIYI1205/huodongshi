@@ -1,0 +1,24 @@
+<view class="contain">
+  <image class="display" bindtap="onDisplayTap" src="/images/display.png"></image>
+  <view class="head">
+    <image src="/images/author.jpg"></image>
+    <text>姓名</text>
+    <text class="number">1606111111</text>
+  </view>
+  <view class="hr"></view>
+  <view class="box">
+    <view class="onerow">
+      <image></image>
+      <text>个人信息</text>
+    </view>
+    <view class="onerow">
+      <image src="/images/bell.png"></image>
+      <text>活动通知</text>
+    </view>
+    <view class="onerow">
+      <image src="/images/message.png"></image>
+      <text>关于我们</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+</view>

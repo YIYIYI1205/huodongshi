@@ -1,0 +1,51 @@
+<view class="container">
+  <view class="header">
+    <text class="header-text">12:00</text>
+  </view>
+  <view class="title">
+    <text class="main-title">活动室申请</text>
+    <view class="back" catchtap='onBackTap'>
+      <text>返回</text>
+    </view>
+  </view>
+
+  <!-- <block wx:for="{{select_detail}}"> 
+    <view class="select">
+      <text class="select-text">{{item.name}}</text>
+      <image src="/images/down.png" bindtap='onShowTap' data-id="{{item.id}}" class="down"></image>
+      <view wx:if="{{item.show}}" class="show">
+        <block wx:for="{{department_detail}}" wx:for-item="item">
+          <view class="department" catchtap='onHideTap' data-department="{{item.name}}">
+            <text class="department-text">{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+   </block>  -->
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <picker mode="selector" name="department" range="{{department_detail}}" value="1" bindchange="bindPickerChange" class="select">
+      <view>{{department}}</view>
+      <image src="/images/down.png" class="down"></image>
+    </picker>
+    <picker mode="date" name="date" start="2018-4-25" end="2019-4-25" value="2018-4-25" fields="day" bindchange="bindDateChange" class="select">
+      <view>{{date}}</view>
+      <image src="/images/down.png" class="down"></image>
+    </picker>
+    <picker mode="time" name="startTime" start="08:00" end="20:00" value="08:00" bindchange="bindTimeStartChange" class="select">
+      <view>{{startTime}}</view>
+      <image src="/images/down.png" class="down"></image>
+    </picker>
+    <picker mode="time" name="overTime" start="08:00" end="23:00" value="22:00" bindchange="bindTimeOverChange" class="select">
+      <view>{{overTime}}</view>
+      <image src="/images/down.png" class="down"></image>
+    </picker>
+    <picker mode="selector" name="method" range="{{method_detail}}" value="1" bindchange="bindMethodChange" class="select">
+      <view>{{method}}</view>
+      <image src="/images/down.png" class="down"></image>
+    </picker>
+    <view class="button">
+      <button class="submit" formType="submit">提交</button>
+      <button class="sreset" formType="reset">重置</button>
+    </view>
+  </form>
+</view>

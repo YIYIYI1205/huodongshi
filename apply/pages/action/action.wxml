@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="header">
+    <!-- <image></image>
+    <image></image> -->
+    <text>12:00</text>
+  </view>
+  <view class="title">
+    <text>活动室申请</text>  
+  </view>
+  <view class="logo">
+    <image src="/images/logo.jpg"></image>
+    <text class="logo-text">审批结果预览</text>
+    <view class="apply" catchtap='onApplyTap'>
+      <text>我要申请</text>
+    </view>
+  </view>
+  <view class="table">
+    <view class="table-title">
+      <view>部门</view>
+      <view>申请人</view>
+      <view>时间</view>
+      <view>用途</view>
+    </view>
+     <!-- <view class="table-content">
+       <view>无线一</view>
+       <view>杨立</view>
+       <view>12月21日19点-21点</view>
+       <view>学习交流</view>
+    </view>  -->
+   <block wx:for="{{apply_key}}">
+      <view class="table-content">
+       <view>{{item.department}}</view>
+       <view>{{item.applicant}}</view>
+       <view>{{item.time}}</view>
+       <view>{{item.method}}</view>
+      </view>
+    </block>  
+  </view>
+  <view class="myApply" catchtap='onMyApplyTap'>
+    <text>我的申请</text>
+  </view>
+</view>

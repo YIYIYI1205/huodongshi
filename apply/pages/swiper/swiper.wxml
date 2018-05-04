@@ -1,0 +1,16 @@
+<!-- <import src="template/template.wxml" /> -->
+<view class="container">
+   <!-- <swiper indicator-dots="true" autoplay="true" interval="2000" bindanimationfinish="animationfinish">  -->
+ <swiper indicator-dots="true" autoplay="true" interval="2000"> 
+    <block wx:for="{{swiper_key}}">
+      <swiper-item>
+        <image class="pic1" src="{{item.url}}"></image>
+        <text class="title">{{item.title1}}</text>
+        <text class="subtitle">{{item.title2}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="button" catchtap='onButtonTap'>
+    <text>跳过</text>
+  </view>
+</view>

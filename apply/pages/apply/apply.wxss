@@ -1,0 +1,71 @@
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+page{
+    background: #405f80; 
+}
+.header-text{
+  float: right;
+  color: white;
+}
+.main-title{
+  color: white;
+  font-size: 20px;
+  margin-left:20px;
+  margin-bottom: 20px; 
+}
+.back{
+  float: right;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  background: white; 
+  border: 1px solid #000;
+  text-align: center;
+  margin: 30px 20px 0 0;
+  border-radius: 8px;
+}
+.select{
+  height: 60px;
+  width: 90%;
+  line-height: 60px;
+  margin: 10px auto;
+  background: white;
+  position: relative;
+}
+.select view{
+  margin-left: 10px;
+  font-size: 20px;
+}
+.down{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+.department{
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: #eee;
+  margin-top: 3px;
+  background:  blue;
+  line-height: 30px;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+}
+.button button{
+  width: 100px;
+  height: 50px;
+  margin-top:30px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  line-height: 50px;
+}

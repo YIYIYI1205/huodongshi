@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class="title">登录</view>
+  <view class="box">
+    <image src="/images/author.jpg"></image>
+    <form catchsubmit="formSubmit">
+      <input class="user" type="text" name="user" placeholder='账号' placeholder-class='placeholder'></input>
+      <input class="password" type="password" name="password" placeholder='密码' placeholder-class='placeholder'></input>
+      <view class='forget' bindtap='onForgetPassword'>忘记密码？</view>
+      <button class="login" formType="submit">登录</button>
+    </form>
+  </view>
+</view>

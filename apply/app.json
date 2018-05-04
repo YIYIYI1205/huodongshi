@@ -1,0 +1,18 @@
+{
+  "pages":[
+      "pages/index/index",
+    "pages/apply/apply",
+    "pages/action/action",
+    "pages/user-message/user-message",
+    "pages/show/show",
+
+    "pages/swiper/swiper",
+    "pages/login/login",
+    "pages/message/message",
+    "pages/article/article",
+    "pages/myApply/myApply"
+  ],
+  "window":{
+    "backgroundTextStyle":"light"
+  }
+}
